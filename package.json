@@ -1,0 +1,14 @@
+{
+  "name": "express-api-example",
+  "version": "0.0.1",
+  "description": "Basic example of a route management strategy for an Express API server",
+  "main": "app.js",
+  "author": "Aaren Tebbutt",
+  "license": "MIT",
+  "repository": "https://github.com/tebs1200/express-api-example",
+  "dependencies": {
+    "convict": "latest",
+    "express": "latest",
+    "log4js": "latest"
+  }
+}
