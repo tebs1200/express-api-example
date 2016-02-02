@@ -13,14 +13,15 @@ describe('Widgets', function() {
     it('returns json', function(done) {
         request
             .get('/widgets')
-            .set('Accept', 'application/jsom')
-            .expect('Content-Type', 'application/json', done);
+            .set('Accept', 'application/json')
+            .expect('Content-Type', 'application/json; charset=utf-8', done);
     });
 
-    it('should have "hello" property with value "world"', function(done) {
+    it('should have "hello" property with value' +
+        ' "world"', function(done) {
         request
             .get('/widgets')
-            .set('Accept', 'application/jsom')
+            .set('Accept', 'application/json')
             .expect(200)
             .end(function(err, res) {
                 res.body.should.have.property("hello");
