@@ -10,5 +10,8 @@
     "convict": "latest",
     "express": "latest",
     "log4js": "latest"
+  },
+  "devDependencies": {
+    "supertest": "^1.1.0"
   }
 }

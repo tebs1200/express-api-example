@@ -18,3 +18,5 @@ app.use(function(req, res) {
 app.listen(config.get('port'), function() {
     logger.info('Example app listening on port 3000!');
 });
+
+module.exports = app;
